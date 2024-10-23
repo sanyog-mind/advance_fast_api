@@ -39,7 +39,7 @@ jobs:
     - name: Deploy to EC2
       run: |
         ssh -o StrictHostKeyChecking=no ubuntu@3.108.149.157 <<EOF
-          cd /home/ubuntu/advance_fastapi/src
+          cd /home/ubuntu/advance_fast_api
           docker-compose down
           docker-compose up -d
         EOF
